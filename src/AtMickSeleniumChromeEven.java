@@ -53,7 +53,8 @@ public class AtMickSeleniumChromeEven {
         //chromeドライバの設定
         System.setProperty("webdriver.chrome.driver", "./exe/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("purge-memory-button");
+        options.addArguments("--purge-memory-button");
+        options.addArguments("--headless");
 //        options.addArguments("disable-accelerated-mjpeg-decode");
 //        options.addArguments("disable-accelerated-video-decode");
 //        DesiredCapabilities cap = DesiredCapabilities.chrome();
